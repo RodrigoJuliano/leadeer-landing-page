@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue';
+import AppButton from '@/components/AppButton.vue';
 
 const IconWhats = defineAsyncComponent(() => import('@/components/icons/IconWhatsapp.vue'));
 const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmail.vue'));
@@ -36,7 +37,7 @@ const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmai
         <input id="form-subject" type="text" name="subject" required />
         <label for="form-message">Mensagem</label>
         <textarea id="form-message" name="message" rows="2" required></textarea>
-        <button type="submit">Enviar</button>
+        <AppButton type="submit">Enviar</AppButton>
       </form>
     </div>
   </section>
@@ -98,7 +99,7 @@ textarea:focus {
   outline: none;
 }
 
-button {
+.app-button {
   display: block;
   margin: auto;
 }

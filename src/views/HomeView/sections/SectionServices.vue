@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AppButton from '@/components/AppButton.vue';
+</script>
+
 <template>
   <section class="site-width" id="services">
     <header>
@@ -13,7 +17,7 @@
           incluindo logotipo, cores, tipografia, imagens e outros elementos gráficos que juntos
           criam uma identidade visual inesquecível.
         </p>
-        <button>Fazer orçamento</button>
+        <AppButton>Fazer orçamento</AppButton>
       </article>
       <article>
         <h3>Social Media</h3>
@@ -24,7 +28,7 @@
           público-alvo. Nós também nos certificamos de que cada conteúdo esteja alinhado com a
           identidade visual da marca, para garantir consistência e fortalecimento da marca.
         </p>
-        <button>Fazer orçamento</button>
+        <AppButton>Fazer orçamento</AppButton>
       </article>
     </div>
   </section>
