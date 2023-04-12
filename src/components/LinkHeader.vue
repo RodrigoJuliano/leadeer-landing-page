@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 
-const props = defineProps<{
+defineProps<{
+  // Passing text as prop to avoid unecessary rerenders (using prop stability)
   text: string;
   to: string;
-  isActive: boolean;
+  isActive?: boolean;
 }>();
 </script>
 
@@ -14,7 +15,7 @@ const props = defineProps<{
       v-bind="$attrs"
       :href="href"
       @click="navigate"
-      :class="[{ 'link-active': isActive }, 'app-link']"
+      :class="[{ 'link-active': isActive }, 'link-header']"
     >
       {{ text }}
     </a>

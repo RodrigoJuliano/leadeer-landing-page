@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue';
 import AppButton from '@/components/AppButton.vue';
+import AppInput from '@/components/AppInput.vue';
+import LinkIcon from '@/components/LinkIcon.vue';
 
 const IconWhats = defineAsyncComponent(() => import('@/components/icons/IconWhatsapp.vue'));
 const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmail.vue'));
@@ -16,27 +18,21 @@ const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmai
           orçamento, por favor, preencha o formulário. Se preferir, use as outras formas de contato
           abaixo. Nossa equipe de atendimento ao cliente irá responder o mais breve possível.
         </p>
-        <p>
-          <a href="#undefined" target="_blank" rel="external noreferrer">
-            <IconWhats />
-            <span> (99) 99999-9999</span>
-          </a>
-          <br />
-          <a href="email:">
-            <IconEmail />
-            <span> contato@email.com</span>
-          </a>
-        </p>
+        <LinkIcon href="#undefined" target="_blank" rel="external noreferrer">
+          <IconWhats />
+          (99) 99999-9999
+        </LinkIcon>
+        <br />
+        <LinkIcon href="email:">
+          <IconEmail />
+          contato@email.com
+        </LinkIcon>
       </div>
       <form>
-        <label for="form-name">Nome</label>
-        <input class="input" id="form-name" type="text" name="name" required />
-        <label for="form-email">Email</label>
-        <input id="form-email" type="email" name="email" required />
-        <label for="form-subject">Assunto</label>
-        <input id="form-subject" type="text" name="subject" required />
-        <label for="form-message">Mensagem</label>
-        <textarea id="form-message" name="message" rows="2" required></textarea>
+        <AppInput id="form-name" name="name" label="Nome" required />
+        <AppInput id="form-email" name="email" label="Email" required />
+        <AppInput id="form-subject" name="subject" label="Assunto" required />
+        <AppInput id="form-message" name="message" label="Mensagem" required multiline rows="2" />
         <AppButton type="submit">Enviar</AppButton>
       </form>
     </div>
@@ -66,37 +62,8 @@ section {
   justify-content: center;
 }
 
-label {
-  font-size: 1em;
-  padding-left: 5px;
-}
-
-form > input,
-form > textarea {
+.app-input {
   margin-bottom: 10px;
-}
-
-input,
-textarea {
-  display: block;
-  width: 100%;
-  padding: 0.7rem;
-  font-size: 1em;
-  font-family: inherit;
-  border: solid 2px white;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
-}
-
-textarea {
-  resize: vertical;
-}
-
-input:focus,
-textarea:focus {
-  border-color: purple;
-  outline: none;
 }
 
 .app-button {
@@ -104,28 +71,7 @@ textarea:focus {
   margin: auto;
 }
 
-a {
-  display: inline-block;
-  color: darkmagenta;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
-
-a * {
-  vertical-align: middle;
-}
-
-a:hover,
-a.link-active {
-  border-color: currentColor;
-}
-
-p + p {
-  margin-top: 20px;
-}
-
-svg {
-  height: 1em;
-  width: 1em;
+p {
+  margin-bottom: 20px;
 }
 </style>

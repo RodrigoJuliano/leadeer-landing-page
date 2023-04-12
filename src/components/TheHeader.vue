@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import IconLeadeer from './icons/IconLeadeer.vue';
-import AppLink from './AppLink.vue';
+import LinkHeader from './LinkHeader.vue';
 
 const route = useRoute();
 const activePath = computed(() => `${route.path}${route.hash}`);
@@ -24,8 +24,7 @@ const links = [
     </a>
 
     <nav>
-      <!-- Passing text as prop to avoid unecessary rerenders (using prop stability) -->
-      <AppLink
+      <LinkHeader
         v-for="link in links"
         :key="link.to"
         :to="link.to"
