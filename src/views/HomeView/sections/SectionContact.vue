@@ -43,12 +43,8 @@ const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmai
 </template>
 
 <style scoped>
-.input {
-  color: black;
-}
-
 section {
-  background: #e0beff;
+  background: #f2e5ff;
 }
 
 .layout {
@@ -70,8 +66,8 @@ section {
 }
 
 label {
-  padding-left: 5px;
   font-size: 1em;
+  padding-left: 5px;
 }
 
 form > input,
@@ -81,13 +77,11 @@ form > textarea {
 
 input,
 textarea {
-  font-size: 1em;
-  font-family: inherit;
-  /* line-height: 1rem; */
   display: block;
   width: 100%;
-  /* height: 2.8rem; */
   padding: 0.7rem;
+  font-size: 1em;
+  font-family: inherit;
   border: solid 2px white;
   border-radius: 10px;
   background-color: white;
@@ -96,20 +90,12 @@ textarea {
 
 textarea {
   resize: vertical;
-  /* padding: calc(calc(2.8rem - 1rem) / 2) 0.9rem; */
-  /* height: calc(3.8rem+4px); */
 }
-
-/* input:hover,
-textarea:hover {
-  border-color: #9f75c5;
-} */
 
 input:focus,
 textarea:focus {
   border-color: purple;
   outline: none;
-  /* box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.144); */
 }
 
 button {
@@ -118,14 +104,10 @@ button {
 }
 
 a {
-  /* font-weight: 400; */
-  text-decoration: none;
-  /* padding: 1px 2px; */
-  border-bottom: 1px solid transparent;
-  color: darkmagenta;
-  /* line-height: 5em; */
-  /* vertical-align: middle; */
   display: inline-block;
+  color: darkmagenta;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
 a * {

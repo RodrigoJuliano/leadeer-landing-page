@@ -37,18 +37,14 @@
 }
 
 img {
-  border-radius: 20px;
   width: 100%;
   aspect-ratio: 1000/633;
+  border-radius: 20px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
 }
 
 .img-container {
   display: flex;
   align-items: center;
-}
-
-p {
-  /* max-width: 530px; */
 }
 </style>

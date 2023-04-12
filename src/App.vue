@@ -17,10 +17,6 @@ import TheHeader from '@/components/TheHeader.vue';
 <style>
 @import '@/assets/base.css';
 
-/* nav a.router-link-exact-active {
-  color: var(--color-text);
-} */
-
 footer {
   font-size: 0.8em;
   text-align: center;

@@ -18,19 +18,28 @@ import SkyBackground from '@/components/SkyBackground.vue';
 section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 70px 30px;
-  /* min-height: calc(100vh - var(--header-height)); */
   min-height: 600px;
   /* padding: 170px 30px; */
   overflow: hidden;
   font-size: 1.8em;
-  background: #e0beff;
+  background: linear-gradient(46deg, #080208, #831383);
 }
 
 @media (max-width: 750px) {
   section {
     flex-direction: column;
+  }
+}
+
+header {
+  color: white;
+}
+
+@media (min-width: 750px) {
+  header {
+    max-width: 60%;
   }
 }
 
@@ -40,17 +49,13 @@ h1 {
   line-height: normal;
 }
 
-.icon {
-  width: 100%;
-  max-width: 250px;
-}
-
-header {
-  color: darkmagenta;
-}
-
 p {
   line-height: 1.2em;
   margin-top: 20px;
+}
+
+.icon {
+  width: 100%;
+  max-width: 250px;
 }
 </style>

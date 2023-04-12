@@ -10,27 +10,18 @@ import SectionMedias from './sections/SectionMedias.vue';
 <template>
   <main>
     <SectionIntro />
-    <SectionAbout />
     <SectionPortfolio />
     <SectionServices />
+    <SectionAbout />
     <SectionContact />
     <SectionMedias />
   </main>
 </template>
 
-<style scoped>
-main {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-}
-</style>
-
 <style>
 section {
   padding-top: 70px;
   padding-bottom: 90px;
-  /* padding-bottom: 70px; */
 }
 
 .site-width {
@@ -46,7 +37,6 @@ h2 {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
-  /* text-transform: uppercase; */
   margin-bottom: 40px;
 }
 </style>

@@ -18,10 +18,6 @@
       <article>
         <h3>Social Media</h3>
         <p>
-          <!-- O serviço de Social Media é a solução perfeita para empresas que desejam construir e expandir sua presença nas
-          redes sociais de maneira profissional e eficiente. Nossa equipe de especialistas em mídia social será
-          responsável por planejar, executar e gerenciar estratégias de mídia social personalizadas para sua empresa. -->
-
           Este serviço é a solução perfeita para empresas que desejam construir e expandir sua
           presença nas redes sociais de maneira profissional e eficiente. Ele inclui a criação de
           conteúdo exclusivo e relevante para cada plataforma de mídia social e de acordo com o
@@ -35,39 +31,36 @@
 </template>
 
 <style scoped>
-header {
-  /* margin-bottom: 30px; */
+section {
+  background-color: #f2e5ff;
 }
 
 .container {
   display: flex;
-  /* justify-content: center; */
   gap: 20px;
 }
 
 article {
-  border-radius: 20px;
-  /* overflow: hidden; */
-  /* margin: 10px; */
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
-  background: #e0beff;
-  padding: 25px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
 }
 
 h3 {
   font-size: 1.4em;
   font-weight: 500;
-  margin-bottom: 5px;
   color: darkmagenta;
+  margin-bottom: 5px;
 }
 
 p {
   flex: 1;
-  margin-bottom: 15px;
   font-size: 0.9em;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 800px) {

@@ -12,7 +12,7 @@ const IconInsta = defineAsyncComponent(() => import('@/components/icons/IconInst
 <template>
   <section class="site-width" id="medias">
     <h2>Conecte-se</h2>
-    <div class="media-grid">
+    <div class="container">
       <a title="Whatsapp" href="#undefined" rel="external noreferrer">
         <IconWhats />
       </a>
@@ -40,20 +40,19 @@ section {
   padding-bottom: 50px;
 }
 
-.media-grid {
+.container {
   text-align: center;
 }
 
 a {
-  /* all: unset; */
-  color: white;
-  line-height: 0;
   display: inline-block;
-  padding: 15px;
+  color: white;
   background-color: darkmagenta;
+  line-height: 0;
+  padding: 15px;
   margin: 10px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
   border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
 }
 
 a:hover {
@@ -61,8 +60,8 @@ a:hover {
 }
 
 a:active {
-  box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.144);
   transform: translateY(-3px);
+  box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.144);
 }
 
 svg {
