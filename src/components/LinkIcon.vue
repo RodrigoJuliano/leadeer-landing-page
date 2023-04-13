@@ -12,6 +12,10 @@ a {
   border-bottom: 1px solid transparent;
 }
 
+a:hover {
+  border-color: currentColor;
+}
+
 :slotted(svg) {
   height: 1em;
   width: 1em;
@@ -19,10 +23,5 @@ a {
 
 a > :slotted(svg) {
   vertical-align: middle;
-}
-
-a:hover,
-a.link-active {
-  border-color: currentColor;
 }
 </style>

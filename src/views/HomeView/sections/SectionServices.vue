@@ -51,7 +51,7 @@ article {
   background: white;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
+  box-shadow: var(--elevation-1);
 }
 
 h3 {

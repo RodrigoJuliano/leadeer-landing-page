@@ -43,12 +43,12 @@ img {
 article {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
+  box-shadow: var(--elevation-1);
   transition: all 0.2s;
 }
 
 article:hover {
-  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.144);
+  box-shadow: var(--elevation-3);
   translate: 0 -10px;
 }
 

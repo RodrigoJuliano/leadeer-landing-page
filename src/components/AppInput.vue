@@ -30,7 +30,7 @@ textarea {
   border: solid 2px white;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
+  box-shadow: var(--elevation-1);
 }
 
 textarea {

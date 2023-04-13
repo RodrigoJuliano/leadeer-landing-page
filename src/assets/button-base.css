@@ -1,0 +1,17 @@
+.button-base {
+  color: white;
+  background-color: purple;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--elevation-1);
+  transition: box-shadow 0.2s, transform 0.1s;
+}
+
+.button-base:hover {
+  background-color: rgb(165, 29, 165);
+}
+
+.button-base:active {
+  transform: translateY(-3px);
+  box-shadow: var(--elevation-2);
+}
