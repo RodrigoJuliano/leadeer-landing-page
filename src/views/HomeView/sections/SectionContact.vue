@@ -21,12 +21,12 @@ const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmai
           abaixo. Nossa equipe de atendimento ao cliente irá responder o mais breve possível.
         </p>
         <LinkIcon href="#undefined" target="_blank" rel="external noreferrer">
-          <IconWhats />
+          <IconWhats aria-label="Whatsapp" />
           (99) 99999-9999
         </LinkIcon>
         <br />
         <LinkIcon href="email:">
-          <IconEmail />
+          <IconEmail aria-label="Email" />
           contato@email.com
         </LinkIcon>
       </div>

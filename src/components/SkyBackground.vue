@@ -17,7 +17,7 @@ const staticStars = computed(() => {
   for (let i = 0; i < props.numStaticStars; i++) {
     const x = random(0, width);
     const y = random(0, height);
-    const r = random(1, 2);
+    const r = random(0.5, 1.5);
     const delay = random(0, 30);
     arr.push({ x, y, r, delay });
   }
@@ -59,7 +59,7 @@ const movingStars = computed(() => {
           :x="star.x"
           :y="star.y"
           width="100"
-          height="2"
+          height="1"
           :style="{ animationDelay: `${star.delay}s` }"
         />
       </template>
@@ -70,6 +70,8 @@ const movingStars = computed(() => {
 <style scoped>
 .svg {
   position: absolute;
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
 }

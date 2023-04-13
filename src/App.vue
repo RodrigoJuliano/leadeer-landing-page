@@ -21,9 +21,16 @@ import TheFooter from '@/components/TheFooter.vue';
 .site-width {
   /* Apply a padding to limit the content width */
   --max-padding: calc(calc(100% - var(--max-content-width)) / 2);
-  --padding: max(var(--max-padding), 30px);
+  --min-padding: 30px;
+  --padding: max(var(--max-padding), var(--min-padding));
   padding-left: var(--padding);
   padding-right: var(--padding);
+}
+
+@media (max-width: 450px) {
+  .site-width {
+    --min-padding: 15px;
+  }
 }
 
 .fade-enter-active,

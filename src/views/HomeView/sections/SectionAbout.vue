@@ -8,7 +8,15 @@ import SectionTitle from '@/components/SectionTitle.vue';
     <SectionTitle>Quem somos?</SectionTitle>
     <div class="container">
       <div class="img-container">
-        <img src="@/assets/images/1000_F_498729118_RiwWjhYDF4LgfnfEL0WCh6Ls4oh0cHPV.jpg" />
+        <picture>
+          <source media="(max-width: 599px)" srcset="@/assets/images/team_w500.jpg" />
+          <source media="(min-width: 600px)" srcset="@/assets/images/team.jpg" />
+          <img
+            src="@/assets/images/team.jpg"
+            alt="Equipe formada por 7 pessoas, sendo 3 homens e 4 mulheres. Todos estão posando para foto de pé e sorrindo."
+            loading="lazy"
+          />
+        </picture>
       </div>
       <p>
         Somos uma empresa de design inovadora e apaixonada por criar soluções criativas e
@@ -42,10 +50,12 @@ import SectionTitle from '@/components/SectionTitle.vue';
 }
 
 img {
+  display: block;
   width: 100%;
   aspect-ratio: 1000/633;
   border-radius: 20px;
   box-shadow: var(--elevation-1);
+  background-color: #f2e5ff;
 }
 
 .img-container {
