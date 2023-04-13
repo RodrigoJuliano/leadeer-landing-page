@@ -1,6 +1,11 @@
+<script setup lang="ts">
+import AppSection from '@/components/AppSection.vue';
+import SectionTitle from '@/components/SectionTitle.vue';
+</script>
+
 <template>
-  <section class="site-width" id="about">
-    <h2>Quem somos?</h2>
+  <AppSection id="about">
+    <SectionTitle>Quem somos?</SectionTitle>
     <div class="container">
       <div class="img-container">
         <img src="@/assets/images/1000_F_498729118_RiwWjhYDF4LgfnfEL0WCh6Ls4oh0cHPV.jpg" />
@@ -15,7 +20,7 @@
         suas necessidades e objetivos, e transformar suas ideias em realidade.
       </p>
     </div>
-  </section>
+  </AppSection>
 </template>
 
 <style scoped>

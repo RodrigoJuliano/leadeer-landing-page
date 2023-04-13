@@ -1,21 +1,22 @@
 <script setup lang="ts">
 import AnimatedRocket from '@/components/AnimatedRocket.vue';
 import SkyBackground from '@/components/SkyBackground.vue';
+import AppSection from '@/components/AppSection.vue';
 </script>
 
 <template>
-  <section class="site-width" id="start">
+  <AppSection id="start">
     <SkyBackground />
     <header>
       <h1>Turbine sua marca</h1>
       <p>Desbravamos o universo do design para levar sua marca para o topo.</p>
     </header>
     <AnimatedRocket class="icon" />
-  </section>
+  </AppSection>
 </template>
 
 <style scoped>
-section {
+.app-section {
   display: flex;
   align-items: center;
   justify-content: space-between;

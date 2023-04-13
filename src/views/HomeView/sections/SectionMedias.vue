@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue';
+import AppSection from '@/components/AppSection.vue';
+import SectionTitle from '@/components/SectionTitle.vue';
 
 const IconWhats = defineAsyncComponent(() => import('@/components/icons/IconWhatsapp.vue'));
 const IconFace = defineAsyncComponent(() => import('@/components/icons/IconFacebook.vue'));
@@ -10,8 +12,8 @@ const IconInsta = defineAsyncComponent(() => import('@/components/icons/IconInst
 </script>
 
 <template>
-  <section class="site-width" id="medias">
-    <h2>Conecte-se</h2>
+  <AppSection id="medias">
+    <SectionTitle>Conecte-se</SectionTitle>
     <div class="container">
       <a title="Whatsapp" href="#undefined" rel="external noreferrer">
         <IconWhats />
@@ -32,12 +34,12 @@ const IconInsta = defineAsyncComponent(() => import('@/components/icons/IconInst
         <IconLinkedin />
       </a>
     </div>
-  </section>
+  </AppSection>
 </template>
 
 <style scoped>
-section {
-  padding-bottom: 50px;
+.app-section {
+  padding-bottom: 70px;
 }
 
 .container {

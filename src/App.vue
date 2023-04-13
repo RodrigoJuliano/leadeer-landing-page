@@ -18,6 +18,14 @@ import TheFooter from '@/components/TheFooter.vue';
 <style>
 @import '@/assets/base.css';
 
+.site-width {
+  /* Apply a padding to limit the content width */
+  --max-padding: calc(calc(100% - var(--max-content-width)) / 2);
+  --padding: max(var(--max-padding), 30px);
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s ease;

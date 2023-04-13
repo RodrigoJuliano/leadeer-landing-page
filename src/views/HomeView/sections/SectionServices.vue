@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import AppButton from '@/components/AppButton.vue';
+import AppSection from '@/components/AppSection.vue';
+import SectionTitle from '@/components/SectionTitle.vue';
 </script>
 
 <template>
-  <section class="site-width" id="services">
-    <header>
-      <h2>Serviços</h2>
-    </header>
+  <AppSection id="services">
+    <SectionTitle>Serviços</SectionTitle>
     <div class="container">
       <article>
         <h3>Idêntidade Visual</h3>
@@ -31,11 +31,11 @@ import AppButton from '@/components/AppButton.vue';
         <AppButton>Fazer orçamento</AppButton>
       </article>
     </div>
-  </section>
+  </AppSection>
 </template>
 
 <style scoped>
-section {
+.app-section {
   background-color: #f2e5ff;
 }
 

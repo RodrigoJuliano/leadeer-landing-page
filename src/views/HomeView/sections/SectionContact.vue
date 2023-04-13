@@ -3,14 +3,16 @@ import { defineAsyncComponent } from 'vue';
 import AppButton from '@/components/AppButton.vue';
 import AppInput from '@/components/AppInput.vue';
 import LinkIcon from '@/components/LinkIcon.vue';
+import AppSection from '@/components/AppSection.vue';
+import SectionTitle from '@/components/SectionTitle.vue';
 
 const IconWhats = defineAsyncComponent(() => import('@/components/icons/IconWhatsapp.vue'));
 const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmail.vue'));
 </script>
 
 <template>
-  <section class="site-width" id="contact">
-    <h2>Contato</h2>
+  <AppSection id="contact">
+    <SectionTitle>Contato</SectionTitle>
     <div class="layout">
       <div>
         <p>
@@ -36,11 +38,11 @@ const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmai
         <AppButton type="submit">Enviar</AppButton>
       </form>
     </div>
-  </section>
+  </AppSection>
 </template>
 
 <style scoped>
-section {
+.app-section {
   background: #f2e5ff;
 }
 
