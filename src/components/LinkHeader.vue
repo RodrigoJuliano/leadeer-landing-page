@@ -5,20 +5,12 @@ defineProps<{
   // Passing text as prop to avoid unecessary rerenders (using prop stability)
   text: string;
   to: string;
-  isActive?: boolean;
 }>();
 </script>
 
 <template>
-  <RouterLink v-bind="$props" custom v-slot="{ navigate, href }">
-    <a
-      v-bind="$attrs"
-      :href="href"
-      @click="navigate"
-      :class="[{ 'link-active': isActive }, 'link-header']"
-    >
-      {{ text }}
-    </a>
+  <RouterLink :to="to" class="link-header">
+    {{ text }}
   </RouterLink>
 </template>
 
@@ -35,9 +27,5 @@ a {
 a:hover,
 a.link-active {
   border-color: currentColor;
-}
-
-a + a {
-  margin-left: 8px;
 }
 </style>
