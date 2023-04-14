@@ -1,29 +1,29 @@
-# criativa-web-vue
+# Leadeer Landing Page
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a landing page for a fictitious company built using Vue.js.
 
-## Recommended IDE Setup
+## Screenshot
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Leadeer Landing Page](.github/screenshot.png)
 
-## Customize configuration
+## Live Preview
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Available at https://RodrigoJuliano.github.io/leadeer-landing-page/.
 
 ## Project Setup
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 ### Compile and Minify for Production
 
 ```sh
-npm run build
+pnpm run build
 ```
