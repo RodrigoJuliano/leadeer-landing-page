@@ -43,7 +43,7 @@ const IconEmail = defineAsyncComponent(() => import('@/components/icons/IconEmai
 
 <style scoped>
 .app-section {
-  background: #f2e5ff;
+  background: var(--color-bg-secundary);
 }
 
 .layout {

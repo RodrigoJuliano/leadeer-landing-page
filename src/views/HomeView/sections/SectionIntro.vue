@@ -8,7 +8,7 @@ import AppSection from '@/components/AppSection.vue';
   <AppSection id="start">
     <SkyBackground />
     <header>
-      <h1>Turbine sua marca</h1>
+      <h1>Turbine Sua Marca</h1>
       <p>Desbravamos o universo do design para levar sua marca para o topo.</p>
     </header>
     <AnimatedRocket class="icon" />
@@ -25,7 +25,7 @@ import AppSection from '@/components/AppSection.vue';
   /* padding: 170px 30px; */
   overflow: hidden;
   font-size: 1.8em;
-  background: linear-gradient(46deg, #080208, #831383);
+  background: linear-gradient(to left bottom, #8b008b, #70015d, #4f0937, #2c0d1c, #000000);
 }
 
 @media (max-width: 750px) {
@@ -35,7 +35,7 @@ import AppSection from '@/components/AppSection.vue';
 }
 
 header {
-  color: white;
+  color: var(--color-text-on-primary);
 }
 
 @media (min-width: 750px) {
@@ -46,13 +46,16 @@ header {
 
 h1 {
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: normal;
+  font-size: 1.7em;
 }
 
 p {
   line-height: 1.2em;
   margin-top: 20px;
+  font-size: 0.8em;
+  font-weight: 200;
 }
 
 .icon {

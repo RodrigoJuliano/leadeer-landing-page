@@ -68,7 +68,7 @@ const items = [
 }
 
 a {
-  color: white;
+  color: var(--color-text-on-primary);
   text-decoration: none;
   line-height: 0; /* remove a weird bottom border */
   border-radius: 20px;
@@ -77,9 +77,14 @@ a {
   transition: all 0.2s;
 }
 
-a:hover {
+a:hover,
+a:focus {
   box-shadow: var(--elevation-3);
   translate: 0 -10px;
+}
+
+a:focus {
+  outline-offset: 3px;
 }
 
 img {
@@ -87,7 +92,7 @@ img {
   width: 330px;
   height: 330px;
   object-fit: cover;
-  background-color: #f2e5ff;
+  background-color: var(--color-bg-secundary);
   color: black;
   /* Reset the line-heigth to allow to read tha alt text */
   line-height: 1em;

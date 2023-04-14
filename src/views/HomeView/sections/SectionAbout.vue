@@ -42,7 +42,7 @@ import SectionTitle from '@/components/SectionTitle.vue';
   flex: 1;
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -55,7 +55,7 @@ img {
   aspect-ratio: 1000/633;
   border-radius: 20px;
   box-shadow: var(--elevation-1);
-  background-color: #f2e5ff;
+  background-color: var(--color-bg-secundary);
 }
 
 .img-container {

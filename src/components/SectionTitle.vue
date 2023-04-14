@@ -4,7 +4,7 @@
 
 <style scoped>
 h2 {
-  color: darkmagenta;
+  color: var(--color-primary);
   font-size: 2em;
   font-weight: bold;
   text-align: center;

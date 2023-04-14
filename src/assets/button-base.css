@@ -1,6 +1,6 @@
 .button-base {
-  color: white;
-  background-color: purple;
+  color: var(--color-text-on-primary);
+  background-color: var(--color-primary);
   border: none;
   cursor: pointer;
   box-shadow: var(--elevation-1);
@@ -8,10 +8,14 @@
 }
 
 .button-base:hover {
-  background-color: rgb(165, 29, 165);
+  background-color: var(--color-primary-highlight);
 }
 
 .button-base:active {
   transform: translateY(-3px);
   box-shadow: var(--elevation-2);
+}
+
+.button-base:focus {
+  outline-offset: 3px;
 }

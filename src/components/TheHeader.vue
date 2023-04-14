@@ -11,8 +11,8 @@ const smallScreen = useMediaQuery('(max-width: 700px)');
 
 <template>
   <header class="site-width">
-    <a href="." class="container-logo" aria->
-      <IconLeadeer fill="darkmagenta" height="2em" />
+    <a href="." class="container-logo">
+      <IconLeadeer height="2em" />
       <span>Leadeer</span>
     </a>
     <label v-if="smallScreen">
@@ -37,8 +37,8 @@ header {
   top: 0;
   z-index: 2;
   height: var(--header-height);
-  color: darkmagenta;
-  background-color: white;
+  color: var(--color-primary);
+  background-color: var(--color-bg);
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.16);
 }
 
@@ -51,7 +51,7 @@ header {
 
 span {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 400;
   padding-left: 10px;
 }
 

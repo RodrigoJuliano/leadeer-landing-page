@@ -20,7 +20,7 @@ import TheFooter from '@/components/TheFooter.vue';
 
 .site-width {
   /* Apply a padding to limit the content width */
-  --max-padding: calc(calc(100% - var(--max-content-width)) / 2);
+  --max-padding: calc((100% - var(--max-content-width)) / 2);
   --min-padding: 30px;
   --padding: max(var(--max-padding), var(--min-padding));
   padding-left: var(--padding);

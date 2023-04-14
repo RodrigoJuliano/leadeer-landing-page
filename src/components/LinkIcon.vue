@@ -7,7 +7,7 @@
 <style scoped>
 a {
   display: inline-block;
-  color: darkmagenta;
+  color: var(--color-primary);
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }

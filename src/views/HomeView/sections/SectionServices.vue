@@ -36,7 +36,7 @@ import SectionTitle from '@/components/SectionTitle.vue';
 
 <style scoped>
 .app-section {
-  background-color: #f2e5ff;
+  background-color: var(--color-bg-secundary);
 }
 
 .container {
@@ -48,7 +48,7 @@ article {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: var(--color-bg);
   padding: 25px;
   border-radius: 20px;
   box-shadow: var(--elevation-1);
@@ -57,7 +57,6 @@ article {
 h3 {
   font-size: 1.4em;
   font-weight: 500;
-  color: darkmagenta;
   margin-bottom: 5px;
 }
 

@@ -19,7 +19,7 @@ a {
   padding: 5px 2px;
   color: inherit;
   /* font-size: 1em; */
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }

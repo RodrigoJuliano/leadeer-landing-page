@@ -7,9 +7,9 @@ const route = useRoute();
 const activePath = computed(() => `${route.path}${route.hash}`);
 const links = [
   { to: '/#start', text: 'Início' },
-  { to: '/#about', text: 'Sobre' },
   { to: '/#portfolio', text: 'Portfólio' },
   { to: '/#services', text: 'Serviços' },
+  { to: '/#about', text: 'Sobre' },
   { to: '/#contact', text: 'Contato' },
   { to: '/#medias', text: 'Redes' }
 ];
@@ -40,7 +40,7 @@ const links = [
     left: 0;
     right: 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--color-bg);
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.16);
   }
 

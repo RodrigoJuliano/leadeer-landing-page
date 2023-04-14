@@ -27,9 +27,9 @@ textarea {
   padding: 0.7rem;
   font-size: 1em;
   font-family: inherit;
-  border: solid 2px white;
+  border: solid 2px var(--color-bg);
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--color-bg);
   box-shadow: var(--elevation-1);
 }
 
@@ -39,7 +39,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: purple;
+  border-color: var(--color-primary);
   outline: none;
 }
 </style>
